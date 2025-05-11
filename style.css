@@ -1,0 +1,49 @@
+/* Basic styling */
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    padding: 50px;
+  }
+  
+  h1 {
+    color: #333;
+  }
+  
+  button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  button:hover {
+    background-color: #2980b9;
+  }
+  
+  /* Element to animate */
+  .box {
+    width: 100px;
+    height: 100px;
+    background-color: #3498db;
+    margin-top: 30px;
+    transition: background-color 0.3s;
+  }
+  
+  /* Keyframes for color change animation */
+  @keyframes colorChange {
+    0% {
+      background-color: #3498db;
+    }
+    100% {
+      background-color: #e74c3c;
+    }
+  }
+  
+  /* Apply animation on click */
+  .animate {
+    animation: colorChange 3s forwards;
+  }
+  
